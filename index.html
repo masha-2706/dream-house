@@ -493,27 +493,29 @@
               Мы перезвоним вам в течении часа в рабочее время и ответим на все вопросы
             </div>
           <div class="form__form">
-            <form action="/my-handling-form-page" method="post">
+            <form action="http://foo.com" method="post">
               <ul>
                 <li>
-                  <label for="name">Имя</label><br>
+                  <label for="name">Имя</label>
                   <input type="text" id="name" name="user_name">
                 </li>
                 <li>
-                  <label for="tel">Телефон</label><br>
+                  <label for="tel">Телефон</label>
                   <input type="tel" id="tel" name="user_tel">
                 </li>
                 <li>
-                  <label for="msg">Введите ваш вопрос ...:</label><br>
+                  <label for="msg">Введите ваш вопрос ...:</label>
                   <input type="msg" id="user_message" name="user_message"></input>
                 </li>
+                  <li class="form__button">
+                    <button type="submit">Заказать звонок</button>
+                  </li>
               </ul>
             </form>
-          </div>
-            <a href="#" class="form__button">Заказать звонок</a>
-          </div>
       </div>
-    </div>
+          </div>
+       </div>
+      </div>
     <!-------------------------------------------------------------------------- 
     ----------------------------BLOCK goods----------------------------- --
 ---------------------------------------------------------------------------->
@@ -913,7 +915,6 @@
          </div>
        </div>
     </footer>
-    <script defer src="js/chief-slider.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
