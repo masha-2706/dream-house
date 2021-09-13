@@ -1,16 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const slider = new ChiefSlider('.slider', {
+    const slider = new DreamHome('.slider', {
       loop: true,
       autoplay: true,
       interval: 5000,
       refresh: true,
     });
   });
-
-
-/* ////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////// */
 
 (function() {
   if (typeof window.CustomEvent === 'function' ) return false;
@@ -50,7 +45,7 @@ var CLASS_CONTROL_HIDE = 'slider__control_hide';
 var CLASS_ITEM_ACTIVE = 'slider__item_active';
 var CLASS_INDICATOR_ACTIVE = 'active';
 
-function ChiefSlider(selector, config) {
+function DreamHome(selector, config) {
   // элементы слайдера
   var $root = typeof selector === 'string' ?
     document.querySelector(selector) : selector;
@@ -133,7 +128,7 @@ function ChiefSlider(selector, config) {
 }
 
 // подключения обработчиков событий для слайдера
-ChiefSlider.prototype._addEventListener = function() {
+DreamHome.prototype._addEventListener = function() {
   var $root = this._$root;
   var $items = this._$items;
   var config = this._config;
@@ -233,7 +228,7 @@ ChiefSlider.prototype._addEventListener = function() {
 };
 
 // update values of extreme properties
-ChiefSlider.prototype.__refreshExtremeValues = function() {
+DreamHome.prototype.__refreshExtremeValues = function() {
   var $itemList = this._$itemList;
   this._minOrder = +$itemList[0].dataset.order;
   this._maxOrder = this._minOrder;
@@ -257,7 +252,7 @@ ChiefSlider.prototype.__refreshExtremeValues = function() {
 };
 
 // update position of item
-ChiefSlider.prototype._balancingItems = function() {
+DreamHome.prototype._balancingItems = function() {
   if (!this._balancingItemsFlag) {
     return;
   }
@@ -299,7 +294,7 @@ ChiefSlider.prototype._balancingItems = function() {
 };
 
 // _setActiveClass
-ChiefSlider.prototype._setActiveClass = function() {
+DreamHome.prototype._setActiveClass = function() {
   var activeItems = this._activeItems;
   var $itemList = this._$itemList;
   for (var i = 0, length = $itemList.length; i < length; i++) {
@@ -314,7 +309,7 @@ ChiefSlider.prototype._setActiveClass = function() {
 };
 
 // _updateIndicators
-ChiefSlider.prototype._updateIndicators = function() {
+DreamHome.prototype._updateIndicators = function() {
   var $indicatorList = this._$indicatorList;
   var $itemList = this._$itemList;
   if (!$indicatorList.length) {
@@ -331,7 +326,7 @@ ChiefSlider.prototype._updateIndicators = function() {
 };
 
 // move slides
-ChiefSlider.prototype._move = function() {
+DreamHome.prototype._move = function() {
   var step = this._direction ===
    'next' ? -this._transformStep : this._transformStep;
   var transform = this._transform + step;
@@ -383,19 +378,19 @@ ChiefSlider.prototype._move = function() {
 };
 
 // _moveToNext
-ChiefSlider.prototype._moveToNext = function() {
+DreamHome.prototype._moveToNext = function() {
   this._direction = 'next';
   this._move();
 };
 
 // _moveToPrev
-ChiefSlider.prototype._moveToPrev = function() {
+DreamHome.prototype._moveToPrev = function() {
   this._direction = 'prev';
   this._move();
 };
 
 // _moveTo
-ChiefSlider.prototype._moveTo = function(index) {
+DreamHome.prototype._moveTo = function(index) {
   var $indicatorList = this._$indicatorList;
   var nearestIndex = null;
   var diff = null;
@@ -427,7 +422,7 @@ ChiefSlider.prototype._moveTo = function(index) {
 };
 
 // _autoplay
-ChiefSlider.prototype._autoplay = function(action) {
+DreamHome.prototype._autoplay = function(action) {
   if (!this._config.autoplay) {
     return;
   }
@@ -448,7 +443,7 @@ ChiefSlider.prototype._autoplay = function(action) {
 };
 
 // _refresh
-ChiefSlider.prototype._refresh = function() {
+DreamHome.prototype._refresh = function() {
   // create some constants
   var $itemList = this._$itemList;
   var widthItem = $itemList[0].offsetWidth;
@@ -515,15 +510,15 @@ ChiefSlider.prototype._refresh = function() {
 };
 
 // public
-ChiefSlider.prototype.next = function() {
+DreamHome.prototype.next = function() {
   this._moveToNext();
 };
-ChiefSlider.prototype.prev = function() {
+DreamHome.prototype.prev = function() {
   this._moveToPrev();
 };
-ChiefSlider.prototype.moveTo = function(index) {
+DreamHome.prototype.moveTo = function(index) {
   this._moveTo(index);
 };
-ChiefSlider.prototype.refresh = function() {
+DreamHome.prototype.refresh = function() {
   this._refresh();
 };
