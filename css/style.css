@@ -125,6 +125,9 @@
   margin-top: 25px;
   margin-bottom: 99px;
 }
+.main__view:hover {
+  color: #121D46;
+}
 #main__location {
   padding-right: 4px;
 }
@@ -223,7 +226,7 @@
 .choice {
   padding-left: 174px;
   padding-right: 167px;
-  margin-bottom: 400px;
+  margin-bottom: 410px;
 }
 .choice__images {
   position: relative;
@@ -304,22 +307,28 @@
 .choice__link:hover {
   color:#FDD444;
 }
+.results__menu{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 214px;
+  padding-left: 215px;
+}
 .results__title {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   color:#121D46;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   padding-bottom: 50px;
-  padding-left: 218px;
-  padding-right: 99px;
 }
-.results__menu{
-  display: inline-block;
+.results__menu__link {
+  display: flex;
+  justify-content: space-between;
+  width: 626px;
 }
 .results__link {
-  padding-left: 40px;
   color:#65B5FC;
   opacity: 60%;
   font-family: 'Noto Sans', sans-serif;
@@ -328,7 +337,6 @@
   line-height: 24px;
 }
 .results__link:hover {
-  padding-left: 30px;
   color:#65B5FC;
   font-weight: 700;
 }
@@ -337,26 +345,27 @@
   *::after {
     box-sizing: border-box;
  }
-.container {
-  max-width: 350px;
-  margin: 0 auto; 
+.slider {
+  position: relative;
+  padding-right: 214px;
+  padding-left: 285px;  
 }
-@media (min-width: 768px) {
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1250px;
-    margin: 0 auto;
- }
+.slider__container {
+  overflow: hidden;
 }
 .slider__wrapper {
   overflow: hidden;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
 }
 @media (min-width: 768px) {
   .slider__item {
@@ -435,22 +444,50 @@
 }
 .slider__control {
   background-color: unset;
+  position: absolute;
+  top: 50%;
+  margin-left: 209px;
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.2);
+}
+.slider__control[data-slide='prev'] {
+  left: 0; 
+}
+.slider__control[data-slide='next'] {
+ right: 0;
 }
 .slider__control:hover,
 .slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.1);
 }
-.slider__indicators {
-  bottom: -35px;
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
 }
-.slider__indicators li {
-  background-color: #eee;
+.slider__control[data-slide='prev']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
-.slider__indicators li.active {
-  background-color: #757575;
+.slider__control[data-slide='next']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 .form {
-  margin-top: 134px;
+  margin-top: 144px;
  }
 .form__images {
   position: relative;
@@ -526,7 +563,7 @@
   width: 429px;
   height: 67px;
   color: #121D46;
-  background-color: #FDD444;;
+  background-color: #FDD444;
   padding-top: 24px;
   padding-left: 147px;
   font-family: 'Lato', sans-serif;
@@ -537,6 +574,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto
+}
+.form__button:hover {
+  color: #121D46;
 }
 .goods {
   padding-left: 215px;
@@ -558,6 +598,12 @@
 }
 .goods__link a{
   text-decoration: none;
+  color: #FDD444;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
 }
 .goods__container {
   display: flex;
@@ -668,6 +714,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto
+}
+.goods__button:hover {
+  color: #121D46;
 }
 .contacts {
   margin-top: 100px;
@@ -827,8 +876,7 @@
   line-height: 17px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 28px;
-  padding-top: 12px;
+  padding-bottom: 10px;
 }
 .basement__container{
   padding-left: 215px;
