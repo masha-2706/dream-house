@@ -6,343 +6,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дом мечты</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-------------------------------------------------------------------------- 
     ----------------------------BLOCK header----------------------------- --
 ---------------------------------------------------------------------------->
     <header class="header">
-      <img src="img/logo.png" alt="" class="header__logo" />
-      <div class="header__logo__text">
-        <span>
-          Ремонтные <br />
-          и строительные <br />
-          работы
-        </span>
+      <div class="header__logo">
+        <img src="img/logo.png" alt="" />
+        <div class="header__logo__text">
+          <span>
+            Ремонтные <br />
+            и строительные <br />
+            работы
+          </span>
+        </div>
       </div>
       <div class="header__menu">
-        <a href="#" class="head__link">Услуги</a>
-        <a href="#" class="head__link">Портфолио</a>
-        <a href="#" class="head__link">Товары</a>
-        <a href="#" class="head__link">О нас</a>
-        <a href="#" class="head__link">Контакты</a>
+        <ul class="head__link">
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Товары</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
       </div>
-      <a class="phone" href="+380447842385">+38 (044) 784-23-85</a>
-      <a class="call" href="#">Заказать звонок</a>
-      <a href="#" class="sum"
-        ><img src="img/trash.png" alt="" class="header__trash" />4 896 грн.<img
-          src="img/Vector 1.png"
-          alt="" /> </a>
-      <a href="#" class="entry"
-        ><img src="img/entry.png" alt="" class="img__entry" />Вход</a>
+      <div class="header__menu__item">
+        <a class="phone" href="+380447842385">+38 (044) 784-23-85</a>
+        <a class="call" href="#">Заказать звонок</a>
+        <a href="#" class="sum">
+          <img src="img/trash.png" alt="" class="header__trash" />
+          4 896 грн.
+          <img src="img/Vector 1.png" alt="" />
+        </a>
+        <a href="#" class="entry">
+          <img src="img/entry.png" alt="" />
+          Вход
+        </a>
+      </div>
     </header>
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK main----------------------------- --
+----------------------------BLOCK main----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="main">
-      <div class="row">
-        <div class="col-5">
-          <div class="main__title">
-            Проектируем и строим дом вашей мечты
-          </div>
-          <div class="main__text">
-            <p>
-              Проектирование и дизайн любых помещений <br />
-              от опытных профессионалов.
-            </p>
-            <p>
-              Строительные материалы лучшего качества <br />
-              по доступным ценам
-            </p>
-          </div>
-          <a href="#" class="main__view"
-            >Смотреть товары <img src="img/Arrow1.png" alt=""
-          /></a>
-          <div class="main__social">
-            <a href="https://goo.gl/maps/c8MBPY8NHSKTeMvD9" id="main__location" target="_blank"
-              ><img src="img/location.png" alt=""
-            /></a>
-            <span>г. Днепр</span>
-            <div class="main__social__icons">
-              <a href="https://www.instagram.com/" target="_blank"><img src="img/instagramm.png" alt="" /></a>
-              <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.png" alt="" /></a>
-              <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="" /></a>
-              <a href="https://www.viber.com/" target="_blank"><img src="img/viber.png" alt="" /></a>
-            </div>
+      <div class="main__info">
+        <div class="main__title">Проектируем и строим дом вашей мечты</div>
+        <div class="main__text">
+          <p>
+            Проектирование и дизайн любых помещений от опытных профессионалов.
+          </p>
+          <p>Строительные материалы лучшего качества по доступным ценам</p>
+        </div>
+        <a href="#" class="main__view">
+          Смотреть товары
+          <img src="img/Arrow1.png" alt="" />
+        </a>
+        <div class="main__social">
+          <a
+            href="https://goo.gl/maps/c8MBPY8NHSKTeMvD9"
+            id="main__location"
+            target="_blank"
+          >
+            <img src="img/location.png" alt="" />
+          </a>
+          <span>г. Днепр</span>
+          <div class="main__social__icons">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="img/instagramm.png" alt="" />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="img/fb.png" alt="" />
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+              <img src="img/whatsapp.png" alt="" />
+            </a>
+            <a href="https://www.viber.com/" target="_blank">
+              <img src="img/viber.png" alt="" />
+            </a>
           </div>
         </div>
-        <div class="col-7">
-          <div class="main__img">
-            <img src="img/main-image1.jpg" alt="" class="main__image1" />
-            <img src="img/main-image2.jpg" alt="" class="main__image2" />
-            <div class="main__img__text">
-              <a href="#"
-                >Фасадные работы <img src="img/Arrow5.png" alt=""
-              /></a>
-              <br />
-              <span> от 300 грн за м²</span>
-            </div>
-          </div>
+      </div>
+      <div class="main__images">
+        <img src="img/main-image1.jpg" alt="" class="main__image1" />
+        <img src="img/main-image2.jpg" alt="" class="main__image2" />
+        <div class="main__img__text">
+          <a href="#">Фасадные работы<img src="img/Arrow5.png" alt="" /> </a>
+          <br />
+          <span> от 300 грн за м²</span>
         </div>
       </div>
     </div>
+
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK service----------------------------- --
+----------------------------BLOCK service----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="service">
       <div class="service__title">Наши услуги</div>
-      <div class="container">
-        <div class="row row-cols-3">
-          <!-- ----------------ITEM 1------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type1.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Фасадные работы</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
+      <div class="service__items">
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type1.png" alt="" class="service__img" />
+            <div class="service__text">Фасадные работы</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type2.png" alt="" class="service__img" />
+            <div class="service__text">Кровельные работы</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type3.png" alt="" class="service__img" />
+            <div class="service__text">Ремонтные работы</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type4.png" alt="" class="service__img" />
+            <div class="service__text">Внутренняя отделка</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type5.png" alt="" class="service__img" />
+            <div class="service__text">Штукатурные работы</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type6.png" alt="" class="service__img" />
+            <div class="service__text">
+              Эпоксидные наливные <br />
+              полы
             </div>
-          </div>
-
-          <!-- ----------------ITEM 2------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type2.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Кровельные работы</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type7.png" alt="" class="service__img" />
+            <div class="service__text">
+              Архитектурные и <br />
+              декоративные элементы
             </div>
-          </div>
-
-          <!-- ----------------ITEM 3------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type3.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Ремонтные работы</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type8.png" alt="" class="service__img" />
+            <div class="service__text">
+              Стяжка полов <br />
+              полусухим методом
             </div>
-          </div>
-
-          <!-- ----------------ITEM 4------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type4.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Внутренняя отделка</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type9.png" alt="" class="service__img" />
+            <div class="service__text">
+              Заливка крыш и пола <br />
+              полистробетоном
             </div>
-          </div>
-
-          <!-- ----------------ITEM 5------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type5.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Штукатурные работы</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 6------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type6.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">
-                  Эпоксидные наливные <br />
-                  полы
-                </div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 7------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type7.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">
-                  Архитектурные и <br />
-                  декоративные элементы
-                </div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 8------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type8.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">
-                  Стяжка полов <br />
-                  полусухим методом
-                </div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 9------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type9.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">
-                  Заливка крыш и пола <br />
-                  полистробетоном
-                </div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 10------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type10.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Бетонные работы</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
-
-          <!-- ----------------ITEM 11------------ -->
-          <div class="col">
-            <div class="service__types">
-              <a href="#" class="service__link">
-                <img
-                  src="img/service-type11.png"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__text">Дом под ключ</div>
-                <img src="img/Arrow3.png" alt="" class="service__img" />
-              </a>
-            </div>
-          </div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type10.png" alt="" class="service__img" />
+            <div class="service__text">Бетонные работы</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
+        </div>
+        <div class="service__item">
+          <a href="#" class="service__link">
+            <img src="img/service-type11.png" alt="" class="service__img" />
+            <div class="service__text">Дом под ключ</div>
+            <img src="img/Arrow3.png" alt="" class="service__img" />
+          </a>
         </div>
       </div>
     </div>
+
     <!-------------------------------------------------------------------------- 
     ----------------------------BLOCK choice----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="choice">
-      <div class="row row-cols-2">
-        <div class="col">
-          <div class="choice__images">
-            <img src="img/choice-img1.png" alt="" class="choice__img1" />
-            <img src="img/choice-img2.jpg" alt="" class="choice__img2" />
-            <img src="img/choice-img3.png" alt="" class="choice__img3" />
-            <div class="choice__statistics">
-              <div class="choice__stat__item_num">15</div>
-              <div class="choice__stat__item">лет на рынке</div>
-              <div class="choice__stat__item_num">9</div>
-              <div class="choice__stat__item">
-                качественных <br />
-                услуг
-              </div>
-              <div class="choice__stat__item_num">300+</div>
-              <div class="choice__stat__item">
-                выполненных <br />
-                проектов
-              </div>
+      <div class="choice__container">
+        <div class="choice__images">
+          <img src="img/choice-img1.png" alt="" class="choice__img1" />
+          <img src="img/choice-img2.jpg" alt="" class="choice__img2" />
+          <img src="img/choice-img3.png" alt="" class="choice__img3" />
+          <div class="choice__statistics">
+            <div class="choice__stat__item_num">15</div>
+            <div class="choice__stat__item">лет на рынке</div>
+            <div class="choice__stat__item_num">9</div>
+            <div class="choice__stat__item">
+              качественных <br />
+              услуг
+            </div>
+            <div class="choice__stat__item_num">300+</div>
+            <div class="choice__stat__item">
+              выполненных <br />
+              проектов
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="choice__info">
-            <div class="choice__title">Мы - ваш лучший выбор!</div>
-            <div class="choice__text">
-              <p>
-                Наша строительная номпания была основана 15 лет назад: в 2005
-                году в городе Днепр.
-              </p>
-              <p>
-                Изначальный асортимент предоставляемых услуг был небольшим:
-                фасадные и кровельные работы.
-              </p>
-              <p>
-                За коротний период времени наша компания поназали стабильный
-                рост и завоевали уважение клиентов своей отнрытостью,
-                исполнительностью и начеством работы.
-              </p>
-              <p>
-                Стремительно и уверенно, еще в самом начале становления,
-                ФасадБуд значительно расширила спектр своей деятельности. На
-                данный момент вы можете обратиться н нам за восмью различными
-                качественными услугами и понупкой высококачественных материалов!
-              </p>
-            </div>
-            <a href="#" class="choice__link">
-              Читать дальше <img src="img/Arrow4.png" alt=""
-            /></a>
+        <div class="choice__info">
+          <div class="choice__title">Мы - ваш лучший выбор!</div>
+          <div class="choice__text">
+            <p>
+              Наша строительная номпания была основана 15 лет назад: в 2005 году
+              в городе Днепр.
+            </p>
+            <p>
+              Изначальный асортимент предоставляемых услуг был небольшим:
+              фасадные и кровельные работы.
+            </p>
+            <p>
+              За коротний период времени наша компания поназали стабильный рост
+              и завоевали уважение клиентов своей отнрытостью, исполнительностью
+              и начеством работы.
+            </p>
+            <p>
+              Стремительно и уверенно, еще в самом начале становления, ФасадБуд
+              значительно расширила спектр своей деятельности. На данный момент
+              вы можете обратиться н нам за восмью различными качественными
+              услугами и покупкой высококачественных материалов!
+            </p>
           </div>
+          <a href="#" class="choice__link">
+            Читать дальше <img src="img/Arrow4.png" alt="" />
+          </a>
         </div>
       </div>
     </div>
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK results----------------------------- --
+----------------------------BLOCK results----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="results">
       <div class="results__menu">
@@ -353,523 +280,537 @@
           <a href="#" class="results__link">Жилые здания</a>
         </div>
       </div>
-          <div class="slider">
-              <div class="slider__wrapper">
-                <div class="slider__items">
-  <!-- slide 1 -->
-                  <div class="slider__item">
-                    <!-- <div class="slider__item-container"> -->
-                      <div class="slider__item-content">
-                        <div class="slider__content_header">
-                          <img
-                            class="slider__content_img"
-                            src="img/result-img-1.jpg"
-                            alt="..."
-                            width="350"
-                            height="250"
-                            loading="lazy"
-                          />
-                          <span class="slider__content_section">1200 м2</span>
-                        </div>
-                        <h2 class="slider__content_title">Ж/К “Алые Паруса”</h2>
-                        <div class="slider__content_footer">
-                          <span>Торговий комплекс в г. Днепр</span><br>
-                          <p><b>Виды работ:</b> Фасадные работы<br>
-                          <b>Материалы:</b> Капарол</p>
-                          <a href="#" class="slider__contetn_more">
-                              Подробнее <img src="img/Arrow4.png" alt=""
-                            /></a>
-                        </div>
-                      </div>
-                    <!-- </div> -->
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div class="slider__item-content">
+                <div class="slider__content_header">
+                  <img
+                    class="slider__content_img"
+                    src="img/result-img-1.jpg"
+                    alt="..."
+                    width="350"
+                    height="250"
+                    loading="lazy"
+                  />
+                  <span class="slider__content_section">1200 м2</span>
+                </div>
+                <h2 class="slider__content_title">Ж/К “Алые Паруса”</h2>
+                <div class="slider__content_footer">
+                  <span>Торговий комплекс в г. Днепр</span><br />
+                  <p>
+                    <b>Виды работ:</b> Фасадные работы<br />
+                    <b>Материалы:</b> Капарол
+                  </p>
+                  <a href="#" class="slider__contetn_more">
+                    Подробнее <img src="img/Arrow4.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/result-img-2.jpg"
+                      alt="..."
+                      width="350"
+                      height="250"
+                      loading="lazy"
+                    />
+                    <span class="slider__content_section">500м2</span>
                   </div>
-  <!-- slide 2 -->
-                  <div class="slider__item">
-                    <div class="slider__item-container">
-                      <div class="slider__item-content">
-                        <div class="slider__content_header">
-                          <img
-                            class="slider__content_img"
-                            src="img/result-img-2.jpg"
-                            alt="..."
-                            width="350"
-                            height="250"
-                            loading="lazy"
-                          />
-                          <span class="slider__content_section">500м2</span>
-                        </div>
-                        <h2 class="slider__content_title">
-                          ТЦ “Бульвар Славы”
-                        </h2>
-                        <div class="slider__content_footer">
-                          <span>Торговий комплекс в г. Днепр</span><br>
-                          <p><b>Виды работ:</b> Фасадные работы<br>
-                          <b>Материалы:</b> Капарол</p>
-                          <a href="#" class="slider__contetn_more">
-                              Подробнее <img src="img/Arrow4.png" alt=""
-                            /></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  <!-- slide 3 -->
-                  <div class="slider__item">
-                    <div class="slider__item-container">
-                      <div class="slider__item-content">
-                        <div class="slider__content_header">
-                          <img
-                            class="slider__content_img"
-                            src="img/result-img-3.jpg"
-                            alt="..."
-                            width="350"
-                            height="250"
-                            loading="lazy"
-                          />
-                          <span class="slider__content_section">1400м2</span>
-                        </div>
-                        <h2 class="slider__content_title">
-                          Ж/К “Изумрудненький”
-                        </h2>
-                        <div class="slider__content_footer">
-                          <span>Торговий комплекс в г. Днепр</span><br>
-                          <p><b>Виды работ:</b> Фасадные работы<br>
-                          <b>Материалы:</b> Капарол</p>
-                          <a href="#" class="slider__contetn_more">
-                              Подробнее <img src="img/Arrow4.png" alt=""
-                            /></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  <!-- slide 4 -->
-                  <div class="slider__item">
-                  <div class="slider__item-container">
-                    <div class="slider__item-content">
-                      <div class="slider__content_header">
-                        <img
-                          class="slider__content_img"
-                          src="img/result-img-2.jpg"
-                          alt="..."
-                          width="350"
-                          height="250"
-                          loading="lazy"
-                        />
-                        <span class="slider__content_section">500м2</span>
-                      </div>
-                      <h2 class="slider__content_title">
-                          ТЦ “Бульвар Славы”
-                      </h2>
-                      <div class="slider__content_footer">
-                          <span>Торговий комплекс в г. Днепр</span><br>
-                          <p><b>Виды работ:</b> Фасадные работы<br>
-                          <b>Материалы:</b> Капарол</p>
-                          <a href="#" class="slider__contetn_more">
-                              Подробнее <img src="img/Arrow4.png" alt=""
-                            /></a>
-                      </div>
-                    </div>
+                  <h2 class="slider__content_title">ТЦ “Бульвар Славы”</h2>
+                  <div class="slider__content_footer">
+                    <span>Торговий комплекс в г. Днепр</span><br />
+                    <p>
+                      <b>Виды работ:</b> Фасадные работы<br />
+                      <b>Материалы:</b> Капарол
+                    </p>
+                    <a href="#" class="slider__contetn_more">
+                      Подробнее <img src="img/Arrow4.png" alt=""
+                    /></a>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/result-img-3.jpg"
+                      alt="..."
+                      width="350"
+                      height="250"
+                      loading="lazy"
+                    />
+                    <span class="slider__content_section">1400м2</span>
+                  </div>
+                  <h2 class="slider__content_title">Ж/К “Изумрудненький”</h2>
+                  <div class="slider__content_footer">
+                    <span>Торговий комплекс в г. Днепр</span><br />
+                    <p>
+                      <b>Виды работ:</b> Фасадные работы<br />
+                      <b>Материалы:</b> Капарол
+                    </p>
+                    <a href="#" class="slider__contetn_more">
+                      Подробнее <img src="img/Arrow4.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__item-container">
+                <div class="slider__item-content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/result-img-2.jpg"
+                      alt="..."
+                      width="350"
+                      height="250"
+                      loading="lazy"
+                    />
+                    <span class="slider__content_section">500м2</span>
+                  </div>
+                  <h2 class="slider__content_title">ТЦ “Бульвар Славы”</h2>
+                  <div class="slider__content_footer">
+                    <span>Торговий комплекс в г. Днепр</span><br />
+                    <p>
+                      <b>Виды работ:</b> Фасадные работы<br />
+                      <b>Материалы:</b> Капарол
+                    </p>
+                    <a href="#" class="slider__contetn_more">
+                      Подробнее <img src="img/Arrow4.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-            <a href="#" class="slider__control" data-slide="prev"></a>
-            <a href="#" class="slider__control" data-slide="next"></a>
         </div>
-   
-  </div>
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+      </div>
+    </div>
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK form----------------------------- --
+----------------------------BLOCK form----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="form">
       <div class="form__images">
-          <img src="img/form-img1.png" alt="" class="form__img1">
-          <img src="img/form-img2.jpg" alt="" class="form__img2">
-          <img src="img/form-img3.png" alt="" class="form__img3">
-          <div class="form__unit">
-            <div class="form__title">
-              Заполните форму <br> для получения консультации
-            </div>
-            <div class="form__text">
-              Мы перезвоним вам в течении часа в рабочее время и ответим на все вопросы
-            </div>
+        <img src="img/form-img1.png" alt="" class="form__img1" />
+        <img src="img/form-img2.jpg" alt="" class="form__img2" />
+        <img src="img/form-img3.png" alt="" class="form__img3" />
+        <div class="form__unit">
+          <div class="form__title">
+            Заполните форму <br />
+            для получения консультации
+          </div>
+          <div class="form__text">
+            Мы перезвоним вам в течении часа в рабочее время и ответим на все
+            вопросы
+          </div>
           <div class="form__form">
             <form action="#" method="post">
               <ul>
                 <li>
                   <label for="name">Имя</label>
-                  <input type="text" id="name" name="user_name">
+                  <input type="text" id="name" name="user_name" />
                 </li>
                 <li>
                   <label for="tel">Телефон</label>
-                  <input type="tel" id="tel" name="user_tel">
+                  <input type="tel" id="tel" name="user_tel" />
                 </li>
                 <li>
                   <label for="msg">Введите ваш вопрос ...:</label>
-                  <input type="msg" id="user_message" name="user_message"></input>
+                  <input type="msg" id="user_message" name="user_message" />
                 </li>
-                  <li class="form__button">
-                    <button type="submit">Заказать звонок</button>
-                  </li>
+                <li class="form__button">
+                  <button type="submit">Заказать звонок</button>
+                </li>
               </ul>
             </form>
-      </div>
           </div>
-       </div>
-      </div>
-    <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK goods----------------------------- --
----------------------------------------------------------------------------->
-    <div class="goods">
-        <div class="goods__main">
-            <div class="goods__title">Популярные товары</div>
-            <div class="goods__link">
-              <a href="#">В магазин <img src="img/Arrow4.png" alt="" /></a>
-            </div>
         </div>
-      <div class="goods__container">
-       
-          <!-- ITEM 1 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
-            </div>
-            <img src="img/item1.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-              <div class="col good__descr">
-                <ul>
-                    <li>Упаковка:</li>
-                    <li>Цвет:</li>
-                    <li>Степень глянца:</li>
-                    <li>Плотность:</li>
-                </ul>
-              </div>
-              <div class="col good_ind">
-                  <ul>
-                    <li>5 литров</li>
-                    <li>Белый</li>
-                    <li>Матовый</li>
-                    <li>ок. 1,5 г/см3</li>
-                  </ul>
-              </div>
-              <div class="old_price">3 523 грн.</div>
-              <div class="good__row">
-                <div class="good__price">2 923 грн.</div>
-                <div class="good__trash">
-                  <img src="img/trash-item.png" alt=""/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM 2 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт акриловый адгезионный Capacryl Haftprimer
-            </div>
-            <img src="img/item2.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Степень глянца:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>0,75 литров</li>
-                      <li>Белый</li>
-                      <li>Матовый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-                <div class="good__row2">
-                    <div class="good__price">238 грн.</div>
-                    <div class="good__trash">
-                      <img src="img/trash-item.png" alt=""/>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <!-- ITEM 3 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт для дерева акриловый водорастворимый Capacryl Holz-Iso.
-              Grund
-            </div>
-            <img src="img/item3.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Степень глянца:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>5 литров</li>
-                      <li>Белый</li>
-                      <li>Матовый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-                <div class="good__row2">
-                    <div class="good__price">292 грн.</div>
-                    <div class="good__trash">
-                      <img src="img/trash-item.png" alt=""/>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <!-- ITEM 4 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт для дерева акриловый водорастворимый Capacryl Holz-Iso.
-              Grund
-            </div>
-            <img src="img/item4.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr1">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>0,75 литров</li>
-                      <li>Бесцветный</li>
-                      <li>ок. 1,01 г/см3</li>
-                    </ul>
-                </div>
-                <div class="good__row1">
-                    <div class="good__price">292 грн.</div>
-                    <div class="good__trash">
-                      <img src="img/trash-item.png" alt=""/>
-                    </div>
-                  </div>
-            </div>
-          </div>
-        
-        <!-- ITEM 5 -->
-           <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
-            </div>
-            <img src="img/item5.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr1">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>5 литров</li>
-                      <li>Белый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-                <div class="good__row1">
-                    <div class="good__price">2 923 грн.</div>
-                    <div class="good__trash">
-                      <img src="img/trash-item.png" alt=""/>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <!-- ITEM 6 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
-            </div>
-            <img src="img/item6.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Степень глянца:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>5 литров</li>
-                      <li>Белый</li>
-                      <li>Матовый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-              <div class="old_price">3 523 грн.</div>
-              <div class="good__row">
-                <div class="good__price">2 923 грн.</div>
-                <div class="good__trash">
-                  <img src="img/trash-item.png" alt=""/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ITEM 7 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
-            </div>
-            <img src="img/item7.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Степень глянца:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>5 литров</li>
-                      <li>Белый</li>
-                      <li>Матовый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-                <div class="good__row2">
-                    <div class="good__price">2 923 грн.</div>
-                    <div class="good__trash">
-                      <img src="img/trash-item.png" alt=""/>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <!-- ITEM 8 -->
-          <div class="col good__item">
-            <div class="goods__item__title">
-              Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
-            </div>
-            <img src="img/item8.jpg" alt="" class="goods__item__img" />
-            <div class="row">
-                <div class="col good__descr">
-                    <ul>
-                        <li>Упаковка:</li>
-                        <li>Цвет:</li>
-                        <li>Степень глянца:</li>
-                        <li>Плотность:</li>
-                    </ul>
-                  </div>
-                  <div class="col good_ind">
-                    <ul>
-                      <li>5 литров</li>
-                      <li>Белый</li>
-                      <li>Матовый</li>
-                      <li>ок. 1,5 г/см3</li>
-                    </ul>
-                </div>
-              <div class="good__row2">
-                <div class="good__price">2 923 грн.</div>
-                <div class="good__trash">
-                  <img src="img/trash-item.png" alt=""/>
-                </div>
-              </div>
-            </div>
-          </div>
-        <a href="#" class="goods__button"
-          >Смотреть все товары <img src="img/Arrow1.png" alt="" 
-        /></a>
       </div>
     </div>
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK contacts----------------------------- --
+----------------------------BLOCK goods----------------------------- --
+---------------------------------------------------------------------------->
+    <div class="goods">
+      <div class="goods__main">
+        <div class="goods__title">Популярные товары</div>
+        <div class="goods__link">
+          <a href="#">В магазин <img src="img/Arrow4.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="goods__container">
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
+          </div>
+          <img src="img/item1.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="old_price">3 523 грн.</div>
+            <div class="good__row">
+              <div class="good__price">2 923 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт акриловый адгезионный Capacryl Haftprimer
+          </div>
+          <img src="img/item2.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>0,75 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row2">
+              <div class="good__price">238 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт для дерева акриловый водорастворимый Capacryl Holz-Iso. Grund
+          </div>
+          <img src="img/item3.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row2">
+              <div class="good__price">292 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт для дерева акриловый водорастворимый Capacryl Holz-Iso. Grund
+          </div>
+          <img src="img/item4.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr1">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>0,75 литров</li>
+                <li>Бесцветный</li>
+                <li>ок. 1,01 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row1">
+              <div class="good__price">292 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
+          </div>
+          <img src="img/item5.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr1">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row1">
+              <div class="good__price">2 923 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
+          </div>
+          <img src="img/item6.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="old_price">3 523 грн.</div>
+            <div class="good__row">
+              <div class="good__price">2 923 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
+          </div>
+          <img src="img/item7.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row2">
+              <div class="good__price">2 923 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col good__item">
+          <div class="goods__item__title">
+            Грунт-эмаль и шпаклёвка Capacryl Airless-Füller
+          </div>
+          <img src="img/item8.jpg" alt="" class="goods__item__img" />
+          <div class="row">
+            <div class="col good__descr">
+              <ul>
+                <li>Упаковка:</li>
+                <li>Цвет:</li>
+                <li>Степень глянца:</li>
+                <li>Плотность:</li>
+              </ul>
+            </div>
+            <div class="col good_ind">
+              <ul>
+                <li>5 литров</li>
+                <li>Белый</li>
+                <li>Матовый</li>
+                <li>ок. 1,5 г/см3</li>
+              </ul>
+            </div>
+            <div class="good__row2">
+              <div class="good__price">2 923 грн.</div>
+              <div class="good__trash">
+                <img src="img/trash-item.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="goods__button">
+        Смотреть все товары
+        <img src="img/Arrow1.png" alt="" />
+      </a>
+    </div>
+    <!-------------------------------------------------------------------------- 
+----------------------------BLOCK contacts----------------------------- --
 ---------------------------------------------------------------------------->
     <div class="contacts">
       <div class="contacts__images">
-        <img src="img/contacts-img1.jpg" alt="" class="contacts__img1">
-        <img src="img/contacts-img2.png" alt="" class="contacts__img2">
-        <a href="https://goo.gl/maps/c8MBPY8NHSKTeMvD9" target="_blank"> <img src="img/contacts-img3.png" alt="" class="contacts__img3">
+        <img src="img/contacts-img1.jpg" alt="" class="contacts__img1" />
+        <img src="img/contacts-img2.png" alt="" class="contacts__img2" />
+        <a href="https://goo.gl/maps/c8MBPY8NHSKTeMvD9" target="_blank">
+          <img src="img/contacts-img3.png" alt="" class="contacts__img3" />
         </a>
-        
-        <!-- https://goo.gl/maps/c8MBPY8NHSKTeMvD9 -->
-          <div class="contacts_info">
-            <div class="contacts__title">Контакты</div>
-            <div class="contacts__sec_title">Наш офис:</div>
-            <div class="contacts__text">
-              г.Днепр, пр. С.Нигояна, 98 <br>
-              Пн-Пт: 7:00-18:00
-            </div>
-            <div class="contacts__phone">+38 (050) 44 22 555 <br> +38 (067) 899 05 75</div>
-            <div class="contacts__sec_title">Электронная почта:</div>
-            <div class="contacts__text">dp_postavka@ukr.net fb_centr@ukr.net</div>
-            <div class="contacts__social_icons">
-              <a href="https://www.instagram.com/" target="_blank"><img src="img/contacts-inst.png" alt="" /></a>
-              <a href="https://www.facebook.com/" target="_blank"><img src="img/contacts-fb.png" alt="" /></a>
-              <a href="https://www.whatsapp.com/" target="_blank"><img src="img/contacts-call.png" alt="" /></a>
-              <a href="https://www.viber.com/" target="_blank"><img src="img/contacts-viber.png" alt="" /></a>
-            </div>
-          </div>     
+        <div class="contacts_info">
+          <div class="contacts__title">Контакты</div>
+          <div class="contacts__sec_title">Наш офис:</div>
+          <div class="contacts__text">
+            г.Днепр, пр. С.Нигояна, 98 <br />
+            Пн-Пт: 7:00-18:00
+          </div>
+          <div class="contacts__phone">
+            +38 (050) 44 22 555 <br />
+            +38 (067) 899 05 75
+          </div>
+          <div class="contacts__sec_title">Электронная почта:</div>
+          <div class="contacts__text">dp_postavka@ukr.net fb_centr@ukr.net</div>
+          <div class="contacts__social_icons">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/contacts-inst.png" alt=""
+            /></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="img/contacts-fb.png" alt=""
+            /></a>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><img src="img/contacts-call.png" alt=""
+            /></a>
+            <a href="https://www.viber.com/" target="_blank"
+              ><img src="img/contacts-viber.png" alt=""
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
     <!-------------------------------------------------------------------------- 
-    ----------------------------BLOCK footer----------------------------- --
+ ----------------------------BLOCK footer----------------------------- --
 ---------------------------------------------------------------------------->
     <footer class="footer">
       <div class="footer__container">
-          <div class="footer_container__item">
-            <div class="foot__log">
-              <img src="img/logo.png" alt="" class="footer__logo" />
-                <div class="footer__logo__text">
-                  <span>
-                    Ремонтные <br />
-                    и строительные <br />
-                    работы
-                  </span>
-              </div>
-            </div>
-            <div class="footer__payment">
-              <img src="img/footer-visa.png" alt="" />
-              <img src="img/footer-mc.png" alt="" />
-              <img src="img/footer-pb24.png" alt="" />
+        <div class="footer_container__item">
+          <div class="foot__log">
+            <img src="img/logo.png" alt="" class="footer__logo" />
+            <div class="footer__logo__text">
+              <span>
+                Ремонтные и<br />
+                строительные <br />
+                работы
+              </span>
             </div>
           </div>
-          <div class="footer_container__item">
-            <div class="foot__phone">
-              <div class="footer__phone">+38 (044) 784-23-85</div>
-              <div class="footer__adress">г. Днепр, пр. С.Нигояна, 98</div>
-            </div>
+          <div class="footer__payment">
+            <img src="img/footer-visa.png" alt="" />
+            <img src="img/footer-mc.png" alt="" />
+            <img src="img/footer-pb24.png" alt="" />
           </div>
-          <div class="footer_container__item">
+        </div>
+        <div class="footer__item">
+          <div class="foot__phone">
+            <div class="footer__phone">+38 (044) 784-23-85</div>
+            <div class="footer__adress">г. Днепр, пр. С.Нигояна, 98</div>
+          </div>
+          <div class="footer__items">
             <div class="footer__social_icons">
-              <a href="https://www.instagram.com/" target="_blank"><img src="img/footer-inst.png" alt="" /></a>
-              <a href="https://www.facebook.com/" target="_blank"><img src="img/footer-fb.png" alt="" /></a>
-              <a href="https://www.whatsapp.com/" target="_blank"><img src="img/footer-whatsapp.png" alt="" /></a>
-              <a href="https://www.viber.com/" target="_blank"><img src="img/footer-vb.png" alt="" /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="img/footer-inst.png" alt=""
+              /></a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="img/footer-fb.png" alt=""
+              /></a>
+              <a href="https://www.whatsapp.com/" target="_blank"
+                ><img src="img/footer-whatsapp.png" alt=""
+              /></a>
+              <a href="https://www.viber.com/" target="_blank"
+                ><img src="img/footer-vb.png" alt=""
+              /></a>
             </div>
             <div class="footer__grafic">Пн-Пт: 8:00-18:00</div>
           </div>
-          <div class="footer_container__item">
-            <div class="footer__list">
-              <ul>
-                <li>
-                  <a href="#">Портфолио</a>
-                </li>
-                <li><a href="#">Товары</a></li>
-                <li>
-                  <a href="#">Цены</a>
-                </li>
-                <li>
-                  <a href="#">О нас</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class="footer_container__item">
+          <div class="footer__list">
+            <ul>
+              <li>
+                <a href="#">Портфолио</a>
+              </li>
+              <li><a href="#">Товары</a></li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
-          <div class="footer_container__item">
-            <div class="footer__list">
+        </div>
+        <div class="footer_container__item">
+          <div class="footer__list">
             <ul>
               <li>
                 <a href="#">Фасадные работы</a>
@@ -885,10 +826,10 @@
                 <a href="#">Штукатурные работы</a>
               </li>
             </ul>
-            </div>
           </div>
-          <div class="footer_container__item">
-            <div class="footer__list">
+        </div>
+        <div class="footer_container__item">
+          <div class="footer__list">
             <ul>
               <li>
                 <a href="#">Полусухая стяжка полов</a>
@@ -901,19 +842,21 @@
                 <a href="#">Заливка полистробетоном</a>
               </li>
               <li>
-                <a href="#"> <b>В магазин</b> <img src="img/Arrow2.png" alt="" /></a>
+                <a href="#">
+                  <b>В магазин</b> <img src="img/Arrow2.png" alt=""
+                /></a>
               </li>
             </ul>
-            </div>
           </div>
-       </div>
-        <hr>
-       <div class="basement__container">
-         <div class="basement">
-           <span>ФасадБуд © 2005-2020. Все права защищены </span> 
-           <span>Политика конфиденциальности</span>
-         </div>
-       </div>
+        </div>
+      </div>
+      <hr />
+      <div class="basement__container">
+        <div class="basement">
+          <span>ФасадБуд © 2005-2020. Все права защищены </span>
+          <span>Политика конфиденциальности</span>
+        </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>
