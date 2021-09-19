@@ -852,22 +852,20 @@
     display: block;
     position: absolute;
     top: -4px;
-    left: 304px;
-    font-size: 10px;
-    width: 130px;
-    height: 30px;
+    left: 209px;
+    font-size: 9px;
+    width: 116px;
+    height: 23px;
+    padding-top: 4px;
   }
   .header__logo__text {
     line-height: 6px;
   }
   .sum {
-    top: 41px;
-    left: 121px;
+    display: none;
   }
   .entry {
-    top: 41px;
-    left: 301px;
-    width: 120px;
+    display: none;
   }
   .phone {
     font-size: 10px;
@@ -877,13 +875,12 @@
     top: 180px;
   }
   .header__menu__item {
-    justify-content: right;
-    left: -8vw;
+    left: 15vw;
   }
   .head__link {
     display: block;
     position: absolute;
-    top: 113px;
+    top: 54px;
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
@@ -905,7 +902,8 @@
     margin-top: 0px;
   }
   .main__title {
-    margin-top: 170px;
+    margin-top: 97px;
+    line-height: 34.6px;
   }
   .main__img__text {
     font-size: 14px;
@@ -918,10 +916,12 @@
   }
   .service__item {
     width: 100%;
+    height: 6.5vw;
   }
   .service__title {
     font-size: 18px;
     margin-bottom: 10px;
+    margin-left: 8vw;
   }
   .service__items {
     margin-left: 15%;
@@ -929,14 +929,13 @@
   .choice__img1 {
     width: 50%;
   }
-
   .choice__img3 {
-    top: 202px;
+    top: 170px;
     width: 311px;
     left: 1px;
   }
   .choice__statistics {
-    top: 190px;
+    top: 158px;
     width: 310px;
     left: -54px;
   }
@@ -971,9 +970,20 @@
   .form__button {
     width: 222px;
     padding-left: 40px;
+    height: 42px;
+  }
+  .form__button button {
+    padding-top: 11px;
   }
   .goods {
     margin-top: 116vw;
+  }
+  .goods__main {
+    margin-bottom: 13px;
+  }
+  .goods__title,
+  .goods__link {
+    text-align: left;
   }
   .contacts__img2 {
     width: 67vw;
@@ -1001,12 +1011,22 @@
 
 /* ---------370------ */
 @media (max-width: 370px) {
+  .call {
+    left: 176px;
+  }
   .header__logo__text {
     font-size: 4px;
     line-height: 5px;
   }
-  .call {
-    left: 115px;
+  .head__link {
+    top: 58px;
+  }
+  .main__title {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .main__view {
+    margin-top: 20px;
   }
   .main__img__text {
     font-size: 12px;
@@ -1015,14 +1035,14 @@
     font-size: 12px;
   }
   .service {
-    margin-top: 275px;
+    margin-top: 235px;
   }
   .choice__img3 {
-    top: 190px;
+    top: 151px;
     width: 265px;
   }
   .choice__statistics {
-    top: 176px;
+    top: 136px;
     left: -65px;
     width: 265px;
   }
@@ -1042,8 +1062,20 @@
   .results__menu__link a {
     text-align: center;
   }
+  .form__button {
+    width: 186px;
+    padding-left: 23px;
+    height: 42px;
+  }
   .goods {
     margin-top: 132vw;
+    margin-bottom: 48px;
+  }
+  .goods__button {
+    width: 251px;
+    height: 50px;
+    padding-top: 17px;
+    padding-left: 27px;
   }
   .contacts__phone {
     font-size: 12px;
@@ -1053,6 +1085,6 @@
     line-height: 14px;
   }
   .footer {
-    margin-top: 70vw;
+    margin-top: 56vw;
   }
 }

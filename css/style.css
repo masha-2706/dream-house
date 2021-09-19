@@ -554,7 +554,6 @@
   left: 50.94%;
   top: -15px;
   z-index: 3;
-  /*  width: 43%; */
 }
 .form__unit {
   position: absolute;
@@ -568,9 +567,7 @@
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  /* font-size: calc(12px + (25 - 12) * (100vw - 370px) / (1600 - 370)); */
   line-height: 31px;
-  /* line-height: calc(15px + (31 - 15) * (100vw - 370px) / (1600 - 370)); */
   padding-bottom: 9px;
 }
 .form__text {
